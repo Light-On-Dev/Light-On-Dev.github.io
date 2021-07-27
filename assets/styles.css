@@ -1,0 +1,30 @@
+.bg-brand-blue {
+    background-color: #4392f1;
+}
+
+.text-brand-blue {
+    color: #4392f1;
+}
+
+.bg-brand-lightblue {
+    background-color: #AACEF9;
+}
+
+.text-brand-lightblue {
+    color: #AACEF9;
+}
+
+#headerGradient {
+    /* color: transparent; */
+    background: rgb(67,146,241);
+    background: linear-gradient(90deg, rgba(67,146,241,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
