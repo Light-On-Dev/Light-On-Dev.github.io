@@ -1,14 +1,21 @@
-window.onload = function () {
-    loadUniversals();
-}
+document.getElementById('inputSubmit').addEventListener('click', form)
 
-async function loadUniversals() {
-    var header = document.getElementsByTagName('header')[0];
-    var footer = document.getElementsByTagName('footer')[0];
+function form() {
+    var inputName = document.getElementById('inputName').value;
+    var inputEmail = document.getElementById('inputEmail').value;
+    var inputMessage = document.getElementById('inputMessage').value;
 
-    var headerContent = await fetch('./universal-assets/header.html').then(data => {return data.text()})
-    var footerContent = await fetch('./universal-assets/footer.html').then(data => {return data.text()})
+    var formdata = new FormData();
+    formdata.append("entry.1824477395", inputName);
+    formdata.append("entry.1392148432", inputEmail);
+    formdata.append("entry.1932890148", inputMessage);
 
-    header.outerHTML = headerContent;
-    footer.outerHTML = footerContent;
+    fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSdwtrhKmVXx2WEAk7cK7cR4lPbVwVBOsIpz-nZOh7fTNKPU1g/formResponse', {
+        method: 'POST',
+        body: formdata
+    })
+
+    document.getElementById('inputName').value = '';
+    document.getElementById('inputEmail').value = '';
+    document.getElementById('inputMessage').value = '';
 }

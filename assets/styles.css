@@ -2,6 +2,18 @@
     background-color: #4392f1;
 }
 
+.brand-btn {
+    background-color: #4392f1;
+}
+
+.brand-btn:hover {
+    background-color: #4391f1dd;
+}
+
+.border-brand-blue {
+    border-color: #4392f1;
+}
+
 .text-brand-blue {
     color: #4392f1;
 }
@@ -14,17 +26,24 @@
     color: #AACEF9;
 }
 
-#headerGradient {
-    /* color: transparent; */
-    background: rgb(67,146,241);
-    background: linear-gradient(90deg, rgba(67,146,241,1) 0%, rgba(255,255,255,1) 100%);
+header {
+    background: rgb(67, 146, 241);
+    background: linear-gradient(90deg, rgba(67, 146, 241, 1) 25%, rgba(255, 255, 255, 1) 75%);
 }
 
-.btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    user-select: none;
+* {
+    outline: 0;
+}
+
+#hero {
+    background-image: url("/assets/img/hero-waves.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+#hero-bottom {
+    height: 16rem;
+    background: #306AB5;
+    background: linear-gradient(180deg, #306AB5 25%, rgba(255, 255, 255, 1) 100%);
 }

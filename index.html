@@ -5,23 +5,264 @@
         <title>Home | Light On Dev</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/tailwind2.css">
+        <link rel="stylesheet" href="/assets/tailwind2.css">
         <link rel="stylesheet" href="https://resources.izmichael.xyz/assets/tailwind2.css">
-        <script src="./assets/js/main.js"></script>
-        <link rel="stylesheet" href="./assets/styles.css">
-        <link rel="icon" type="image/png" href="./favicon.png"/>
+        <link rel="stylesheet" href="/assets/styles.css">
+        <link rel="icon" type="image/png" href="./favicon.png" />
     </head>
 
-    <body class="h-screen overflow-hidden">
-        <header></header>
-        <div id="wrapper" class="p-5 h-full">
-            <section id="banner" class="flex flex-col justify-center items-center h-1/2">
-                <h1 class="text-4xl text-center">Website Coming Soon</h1>
-                <h2 class="text-2xl text-center">In the mean time, If you're interested in starting your website, get in touch!</h2>
-                <a href="mailto:michael@lightondev.xyz" class="text-xl text-center">michael@lightondev.xyz</a>
+    <body>
+        <header class="fixed z-50 flex flex-row items-center justify-between w-full h-24 p-2 bg-gray-100 shadow-lg">
+            <a href="/#" class="h-full">
+                <img src="/assets/img/logo/wide-logo.png" class="h-full">
+            </a>
+
+            <div class="flex flex-row items-center justify-end mr-5">
+                <!-- <a href="/portal/" class="inline-flex items-center p-1 px-3 mr-3 bg-gray-200 rounded hover:bg-gray-500">
+                    Portal
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a> -->
+                <a href="/contact" class="inline-flex items-center p-1 px-3 bg-gray-200 rounded hover:bg-gray-300">
+                    Contact
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </header>
+
+        <div class="pageContent">
+            <section id="hero" class="flex flex-col items-center justify-center w-full h-screen pt-24 overflow-hidden bg-blue-100">
+                <div
+                    class="flex flex-col items-center justify-between h-full px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-32 md:px-0">
+                    <div class="flex flex-col items-center max-w-2xl transform scale-150 md:px-8">
+                        <div class="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+                            <h2 class="mb-6 font-sans text-6xl font-bold leading-none tracking-tight text-gray-900 sm:text-5xl md:mx-auto">Light On Dev</h2>
+                            <p class="text-base text-gray-700 md:text-lg">
+                                Beautifully crafted websites and applications.
+                            </p>
+                        </div>
+                    </div>
+                    <img src="https://kitwind.io/assets/kometa/half-browser.png"
+                        class="w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-md" alt="" />
+                </div>
+            </section>
+            <div id="hero-bottom"></div>
+
+            <section id="intro" class="flex flex-row w-1/2 p-10 py-16 mx-auto">
+                <div class="text-center sm:w-1/3 sm:pr-8 sm:py-8">
+                    <img class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 rounded-full"
+                        src="/assets/img/logo/round-logo.png">
+                    </img>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <h2 class="mt-4 text-lg font-medium text-gray-900 title-font">
+                            Light On Dev
+                        </h2>
+                        <div class="w-12 h-1 mt-2 mb-4 rounded bg-brand-blue"></div>
+                        <p class="text-base text-gray-600">
+                            Hi! We're Light On Dev.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="pt-4 mt-4 text-center border-t border-gray-300 sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
+                    <p class="mb-4 text-lg leading-relaxed">
+                        We're a Programming Company focusing on Web Development, Web Design and Web Hosting,
+                        in
+                        short, we mostly make websites. Want a website? I'm your guy.
+                        <a href="/contact" class="text-blue-400">Send me a message</a>
+                        and we can discuss details. My prices are low and reasonable. I have a
+                        <a href="#portfolio" class="text-blue-400"> lot of experience with Web
+                            Development</a>
+                        and can take care of your needs.
+                    </p>
+                </div>
+            </section>
+
+            <section id="about-iz"
+                class="flex flex-col items-center justify-center w-3/4 py-16 mx-auto border-t border-gray-300">
+                <div class="text-center">
+                    <p class="text-2xl text-gray-800">
+                        Michael Martin
+                    </p>
+                    <p class="text-xl font-light text-gray-500">
+                        CEO & Developer
+                    </p>
+                    <p class="max-w-sm py-4 font-light text-gray-500 text-md">
+                        Hello, my name is Michael. I'm a professional web developer who enjoys programming. I'm
+                        originally
+                        from the UK, but emigrated in 2012. I sell websites as Light On Dev I've made lots of other
+                        things, and you can check them out at <a href="https://izmichael.xyz/#portfolio"
+                            class="font-normal text-blue-400">my website.</a>
+                    </p>
+                </div>
+                <div class="flex items-center justify-between pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
+                    <a href="https://twitter.com/IzMichael7">
+                        <svg width="30" height="30" fill="currentColor"
+                            class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/IzMichael">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                            viewBox="0 0 1792 1792">
+                            <path
+                                d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://izmichael.xyz">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section id="testimonials"
+                class="flex items-center justify-center w-3/4 px-5 py-16 pt-32 mx-auto text-gray-700 border-t">
+                <div class="max-w-xl px-5 pt-5 pb-10 mx-auto text-gray-800 bg-white rounded-lg shadow-xl">
+                    <div class="w-full pt-1 pb-5 mx-auto -mt-16 text-center">
+                        <a href="#" class="relative block">
+                            <img alt="profile" src="https://therosyshell.co.nz/favicon.png"
+                                class="object-cover w-20 h-20 mx-auto rounded-full" />
+                        </a>
+                    </div>
+                    <div class="w-full mb-10">
+                        <div class="h-3 text-3xl leading-tight text-left text-brand-blue">
+                            “
+                        </div>
+                        <p class="px-5 text-sm text-center text-gray-600 dark:text-gray-100">
+                            We needed a website really quickly with the ability to sell our products.
+                            Light&nbsp;On&nbsp;Dev
+                            sorted us out straightaway, showing us how best to use the<br>e-commerce function and
+                            making updates as quickly as we asked for them.
+                        </p>
+                        <div class="h-3 -mt-3 text-3xl leading-tight text-right text-brand-blue">
+                            ”
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <p class="font-bold text-center text-brand-blue text-md">
+                            Rosalind Martin
+                        </p>
+                        <p class="text-xs text-center text-gray-500 dark:text-gray-300">
+                            @TheRosyShell
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" class="grid w-3/4 grid-cols-3 gap-2 py-16 mx-auto border-t">
+                <a href="https://therosyshell.co.nz" class="flex flex-col p-4 m-2 bg-gray-200 rounded-lg">
+                    <img class="bg-gray-400" src="/assets/img/therosyshell.png">
+                    <div class="flex flex-col items-start mt-4">
+                        <h4 class="text-xl font-semibold">The Rosy Shell</h4>
+                        <p class="text-sm">We were contacted by The Rosy Shell and commissioned to develop them a
+                            website that they could sell their products on.</p>
+                    </div>
+                </a>
+
+                <!-- <a href="https://therosyshell.co.nz" class="flex flex-col p-4 m-2 bg-gray-200 rounded-lg">
+                    <img class="bg-gray-400" src="/assets/img/therosyshell.png">
+                    <div class="flex flex-col items-start mt-4">
+                        <h4 class="text-xl font-semibold">The Rosy Shell</h4>
+                        <p class="text-sm">We were contacted by The Rosy Shell and commissioned to develop them a
+                            website that they could sell their products on.</p>
+                    </div>
+                </a> -->
+
+                <!-- <a href="https://therosyshell.co.nz" class="flex flex-col p-4 m-2 bg-gray-200 rounded-lg">
+                    <img class="bg-gray-400" src="/assets/img/therosyshell.png">
+                    <div class="flex flex-col items-start mt-4">
+                        <h4 class="text-xl font-semibold">The Rosy Shell</h4>
+                        <p class="text-sm">We were contacted by The Rosy Shell and commissioned to develop them a
+                            website that they could sell their products on.</p>
+                    </div>
+                </a> -->
+            </section>
+
+            <section id="bottomcta" class="w-3/4 mx-auto bg-white border-t">
+                <div
+                    class="z-20 w-full px-4 py-12 mx-auto lg:flex lg:items-center lg:justify-between sm:px-6 lg:py-16 lg:px-8">
+                    <h2 class="text-3xl font-extrabold text-black dark:text-white sm:text-4xl">
+                        <span class="block">
+                            Ready to build your website?
+                        </span>
+                        <span class="block text-brand-blue">
+                            Let's work it out.
+                        </span>
+                    </h2>
+                    <div class="lg:mt-0 lg:flex-shrink-0">
+                        <div class="inline-flex rounded-md shadow ">
+                            <a href="/contact" id="bottomCTA"
+                                class="w-full px-6 py-4 font-semibold text-center text-white rounded-lg shadow-md bg-brand-blue">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
-        <footer></footer>
+
+        <footer class="w-full py-8 bg-white border-t-2 dark:bg-gray-800">
+            <div class="max-w-screen-xl px-4 mx-auto">
+                <div class="flex items-center justify-between max-w-xs mx-auto">
+                    <a href="https://www.facebook.com/LightOnDev"
+                        class="text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/LightOnDev"
+                        class="text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                        <svg width="20" height="20" fill="currentColor"
+                            class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                            viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/Light-On-Dev"
+                        class="text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                            viewBox="0 0 1792 1792">
+                            <path
+                                d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/LightOnDev"
+                        class="text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div
+                    class="flex items-center justify-center pt-10 font-light text-center text-gray-500 dark:text-gray-200 sm:pt-12">
+                    With &heartsuit; by Light On Dev
+                </div>
+            </div>
+        </footer>
     </body>
 
 </html>
